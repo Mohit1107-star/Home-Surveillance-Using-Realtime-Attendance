@@ -20,10 +20,13 @@ Details of Algorithms and Designs:
 After experimenting with several algorithms, we found two algorithms best suited for our use case, namely Haar Cascades for face detection
 and LBPH for face recognition.
 
-Haar Cascades -Haar Cascades algorithm is a machine learning based approach in which we use a classifier function which is trained by a large number of photos. Based on this training, the function is used to detect particular objects (faces in our case) in other images. This algorithm has four stages1. Haar Feature Selection
+Haar Cascades -Haar Cascades algorithm is a machine learning based approach in which we use a classifier function which is trained by a large number of photos. Based on this training, the function is used to detect particular objects (faces in our case) in other images. This algorithm has four stages:
+
+1. Haar Feature Selection
 2. Creating Integral Images
 3. Adaboost Training
 4. Cascading Classifiers
+
 The first stage, Haar Feature Selection, considers adjacent rectangular regions at a specific location, sums up the pixel intensities in each region and calculates the difference between these sums. This helps us to detect features like edge features, line features and four-rectangle features. The purpose of stage 2, creation of integral images, is to enhance the speed of this process.But most of the features we calculate are irrelevant. So, selection or pooling of these features is done by the concept of Adaboost which selects the best features and trains the classifiers that use them. The Cascading classifier consists of a collection of stages where each stage is an ensemble of weak learners, which in turn are simple.
 
 LBPH Algorithm -
