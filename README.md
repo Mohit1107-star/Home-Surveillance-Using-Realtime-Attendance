@@ -1,6 +1,7 @@
 # Home-Surveillance-Using-Realtime-Attendance
 The project is aimed at solving that problem making use of latest tech for machine learning, face recognition, notification alert system and database management.
 Parameters Involved -Any house will have the following aspects defined:
+
 i) State of House – Secure or Unsecured
 ii) Owners of House – Maximum 5 (can be increased or decreased)
 iii) Guests
